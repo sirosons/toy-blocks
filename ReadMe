@@ -1,0 +1,18 @@
+Instructions:
+
+The current application is displaying a list of nodes. Don’t worry about naming convention here, the names don’t matter. Each node represents a server. Each server implements the same API but returns different data. The important endpoints you will need to know for each server are:
+
+/api/v1/status
+/api/v1/blocks
+
+Each node has many blocks and the blocks for each node are returned from the blocks endpoint.
+
+Currently the application is displaying the list of nodes in a TableView.  We would like to retreive the status of each node when the view loads and retreive the blocks for a node when the node is opened.
+
+Acceptance criteria:
+
+1. Update the status of each node when the view loads
+2. Blocks are displayed when opening up the card if the status of the node is "online"
+3. Loading, error, empty states are displayed when appropriate
+3. Tests pass and coverage has been added to cover the changes
+4. Implementation matches the design [https://www.figma.com/proto/CCuZ0sjGQ2CQtKvuENHaF8/React-Hiring-Test?node-id=11%3A26922&scaling=min-zoom]
